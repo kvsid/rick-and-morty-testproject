@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="a2M-AL-YQe">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Start View Controller-->
+        <scene sceneID="BoZ-C9-d3N">
+            <objects>
+                <viewController storyboardIdentifier="Start" id="a2M-AL-YQe" customClass="StartViewController" customModule="RickAndMortyTestProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LI4-gO-exI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j5N-2e-2at">
+                                <rect key="frame" x="25" y="801" width="364" height="45"/>
+                                <color key="backgroundColor" red="0.1764705882352941" green="0.70196078431372544" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="o6P-B3-KuY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startButtonPressed:" destination="a2M-AL-YQe" eventType="touchUpInside" id="fic-hf-4ci"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="91MteSqsrJL" translatesAutoresizingMaskIntoConstraints="NO" id="qIu-dF-5Sh">
+                                <rect key="frame" x="25" y="44" width="364" height="732"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uDC-QG-hmP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qIu-dF-5Sh" firstAttribute="leading" secondItem="uDC-QG-hmP" secondAttribute="leading" constant="25" id="2XM-8l-Dcb"/>
+                            <constraint firstItem="j5N-2e-2at" firstAttribute="top" secondItem="qIu-dF-5Sh" secondAttribute="bottom" constant="25" id="4bP-94-5b0"/>
+                            <constraint firstItem="uDC-QG-hmP" firstAttribute="trailing" secondItem="j5N-2e-2at" secondAttribute="trailing" constant="25" id="Cge-mf-x5p"/>
+                            <constraint firstItem="qIu-dF-5Sh" firstAttribute="top" secondItem="uDC-QG-hmP" secondAttribute="top" id="GfM-RC-4e2"/>
+                            <constraint firstItem="j5N-2e-2at" firstAttribute="leading" secondItem="uDC-QG-hmP" secondAttribute="leading" constant="25" id="HrB-XZ-78p"/>
+                            <constraint firstAttribute="bottom" secondItem="j5N-2e-2at" secondAttribute="bottom" constant="50" id="g7h-pM-HYj"/>
+                            <constraint firstItem="uDC-QG-hmP" firstAttribute="trailing" secondItem="qIu-dF-5Sh" secondAttribute="trailing" constant="25" id="sQE-kB-vaT"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S55-RE-yjX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="307" y="117"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="91MteSqsrJL" width="1945" height="2560"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

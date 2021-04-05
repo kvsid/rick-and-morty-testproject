@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wwN-nR-GjU">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Character List View Controller-->
+        <scene sceneID="vEO-t2-me6">
+            <objects>
+                <viewController storyboardIdentifier="CharacterList" id="wwN-nR-GjU" customClass="CharacterListViewController" customModule="RickAndMortyTestProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Quy-hD-IQe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="z5A-dU-aVZ">
+                                <rect key="frame" x="0.0" y="74" width="414" height="788"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mij-bK-DNF">
+                                <rect key="frame" x="0.0" y="44" width="414" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3p2-bh-GxU"/>
+                                </constraints>
+                                <state key="normal" title="A-Z">
+                                    <color key="titleColor" red="0.27450980392156865" green="0.61568627450980395" blue="0.75686274509803919" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="azFilterPressed:" destination="wwN-nR-GjU" eventType="touchUpInside" id="quV-w8-UPD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="I1Q-hX-jiJ"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mij-bK-DNF" firstAttribute="top" secondItem="I1Q-hX-jiJ" secondAttribute="top" id="LCN-xW-yVO"/>
+                            <constraint firstItem="I1Q-hX-jiJ" firstAttribute="bottom" secondItem="z5A-dU-aVZ" secondAttribute="bottom" id="Lgq-Zb-6ps"/>
+                            <constraint firstItem="z5A-dU-aVZ" firstAttribute="top" secondItem="mij-bK-DNF" secondAttribute="bottom" id="YI3-jm-lSK"/>
+                            <constraint firstItem="mij-bK-DNF" firstAttribute="leading" secondItem="I1Q-hX-jiJ" secondAttribute="leading" id="d6a-51-nej"/>
+                            <constraint firstItem="z5A-dU-aVZ" firstAttribute="leading" secondItem="I1Q-hX-jiJ" secondAttribute="leading" id="dej-2k-Cp7"/>
+                            <constraint firstItem="I1Q-hX-jiJ" firstAttribute="trailing" secondItem="mij-bK-DNF" secondAttribute="trailing" id="qYg-4P-Pd2"/>
+                            <constraint firstItem="I1Q-hX-jiJ" firstAttribute="trailing" secondItem="z5A-dU-aVZ" secondAttribute="trailing" id="vca-zP-Dhf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="azFilter" destination="mij-bK-DNF" id="gH7-pD-Eyg"/>
+                        <outlet property="characterListTableView" destination="z5A-dU-aVZ" id="GfT-wU-zoC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V1j-H8-aL0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="321.73913043478262" y="181.47321428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
